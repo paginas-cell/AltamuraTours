@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altamura Tours | Exploración en la Bahía Santa María</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #004a7c; /* Azul oceánico */
+            --accent: #25D366;  /* Verde WhatsApp */
+            --text: #2d3436;
+            --light: #f9f9f9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        /* Navegación */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            position: fixed;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                        url('https://images.unsplash.com/photo-1544551763-47a184230181?auto=format&fit=crop&q=80&w=1920') center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        /* Botones */
+        .btn {
+            display: inline-block;
+            padding: 16px 35px;
+            background-color: var(--accent);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
+        }
+
+        /* Secciones Generales */
+        section {
+            padding: 100px 5%;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 50px;
+            color: var(--primary);
+        }
+
+        /* Grid de Destinos */
+        .destinos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .destino-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #eee;
+            transition: 0.3s;
+        }
+
+        .destino-card:hover {
+            border-color: var(--primary);
+            background: var(--light);
+        }
+
+        .destino-card h3 {
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        /* Contacto */
+        .contacto {
+            background: var(--light);
+            text-align: center;
+        }
+
+        .whatsapp-big {
+            font-size: 1.5rem;
+            color: var(--primary);
+            text-decoration: none;
+            display: block;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        footer {
+            padding: 40px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #777;
+            border-top: 1px solid #eee;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                justify-content: center;
+            }
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            section {
+                padding: 60px 5%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Altamura Tours</div>
+    </nav>
+
+    <section class="hero" id="inicio">
+        <h1>Explora el Paraíso en Angostura</h1>
+        <p>Tours exclusivos en panga por la Bahía Santa María. Naturaleza virgen y aventuras inolvidables en Costa Azul.</p>
+        <a href="https://wa.me/526977295750?text=Hola%20Altamura%20Tours,%20me%20gustaría%20solicitar%20información" class="btn">RESERVAR AHORA</a>
+    </section>
+
+    <section id="destinos">
+        <h2>Destinos Imperdibles</h2>
+        <div class="destinos-grid">
+            <div class="destino-card">
+                <h3>🏝️ Isla Altamura</h3>
+                <p>Descubre el gigante de arena, dunas espectaculares y un horizonte infinito.</p>
+            </div>
+            <div class="destino-card">
+                <h3>❤️ Isla del Amor</h3>
+                <p>Un rincón tranquilo y romántico, ideal para disfrutar de la paz del mar.</p>
+            </div>
+            <div class="destino-card">
+                <h3>✨ Médano Blanco</h3>
+                <p>Aguas cristalinas y arena blanca. El spot fotográfico más deseado de la bahía.</p>
+            </div>
+            <div class="destino-card">
+                <h3>🦜 Isla de los Pájaros</h3>
+                <p>Observa la biodiversidad en su máximo esplendor en nuestras zonas de anidación.</p>
+            </div>
+            <div class="destino-card">
+                <h3>💧 Agua Dulce</h3>
+                <p>Un encuentro único con la naturaleza virgen de nuestras marismas.</p>
+            </div>
+            <div class="destino-card">
+                <h3>🛶 El Porfirio</h3>
+                <p>Historia y tradición náutica en un recorrido guiado por expertos locales.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+        <h2>¿Listo para navegar?</h2>
+        <p>Estamos en Costa Azul, Angostura, Sinaloa. ¡Contáctanos directamente!</p>
+        <a href="https://wa.me/526977295750" class="whatsapp-big">📞 697 729 5750</a>
+        <br><br>
+        <a href="https://wa.me/526977295750?text=Hola%20Altamura%20Tours" class="btn">Escribir por WhatsApp</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Altamura Tours - Bahía Santa María, Sinaloa. <br> Modernidad y Tradición en el Mar.</p>
+    </footer>
+
+</body>
+</html>
